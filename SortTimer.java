@@ -10,18 +10,18 @@ class SortTimer
    // double sort(double arr[]) 
     { 
         int n = arr.length; 
-        for (int gap = n/2; gap > 0; gap /= 2) 
+        for (int arrs = n/2; arrs > 0; arrs /= 2) 
         { 
-            for (int i = gap; i < n; i += 1) 
+            for (int i = arrs; i < n; i += 1) 
             { 
                 double temp = arr[i]; 
                 int j; 
-                for (j = i; j >= gap && arr[j - gap] > temp; j -= gap) 
-                    arr[j] = arr[j - gap]; 
+                for (j = i; j >= arrs && arr[j - arrs] > temp; j -= arrs) 
+                    arr[j] = arr[j - arrs]; 
                 arr[j] = temp; 
             } 
         } 
-      //  return 0; 
+        //return 0; 
     } 
   }
   
